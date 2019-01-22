@@ -1,20 +1,20 @@
 ---
-name: Bug report
-about: Create a report to help us improve
+name: Reporte de Bug
+about: Crea un reporte para ayudarnos a mejorar
 title: ''
 labels: ''
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Describe el bug**
+Descripción clara y concisa del bug.
 
-**To Reproduce**
-Call endpoint ... with params ... and ...
+**Pasos para reproducir**
+Llamar endpoint ... con parámetros ... y ...
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Comportamiento esperado**
+Descripción clara y concisa del comportamiento esperado.
 
-**Additional context**
-Add any other context about the problem here.
+**Notas adicionales**
+Comentarios adicionales acerca de este bug.
