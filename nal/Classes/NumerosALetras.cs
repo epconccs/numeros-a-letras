@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace nal.Classes
 {
-    public static class ClsNumerosALetras
+    public static class NumerosALetras
     {
         /// <summary>
         /// Separar parte entera y decimal, convertirlas e unirlas.
@@ -64,16 +64,13 @@ namespace nal.Classes
                 }
 
                 // Excepción VEINTIÚN.
-                var contador = res.Split(' ').ToList().Where(t => t == "VEINTIUNO").Count();
+                var contador = res.Split(' ').Count(t => t == "VEINTIUNO");
                 for (int i = 0; i < contador; i++)
                 {
                     var index = res.IndexOf("VEINTIUNO");
-                    if (index != -1)
+                    if (index != -1 && index != res.Count() - 9)
                     {
-                        if (index != res.Count() - 9)
-                        {
-                            res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
-                        }
+                        res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
                     }
                 }
 
