@@ -1,21 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using nal.Config;
 
 namespace nal.Controllers
 {
     [Route("/")]
     public class HomeController : Controller
     {
+
+        private readonly IOptions<AppSettings> settings;
+
+        public HomeController(IOptions<AppSettings> settings)
+        {
+            this.settings = settings;
+        }
+
         // Redirección a proyecto en GitHub
         [HttpGet]
         public IActionResult Get()
         {
-            return Redirect("https://github.com/epconccs/nal");
+            return Redirect(settings.Value.RepoUrl);
         }
     }
 }
