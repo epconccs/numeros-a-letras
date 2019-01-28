@@ -14,10 +14,10 @@ Convierte un número a letras en español.
 
 |Detalles||
 |---|---|
-|**URL**|`/api/NAL/`|
+|**URL**|`/api/NAL`|
 |**Método**|`GET`|
 |**Requiere Autenticación**|NO|
-|**Path Parameters**|`int num` *requerido|
+|**Path Parameters**|`int num`|
 |**Query Parameters**|NO|
 
 ## Respuesta
