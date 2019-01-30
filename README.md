@@ -8,7 +8,7 @@ Prueba -> https://nal.azurewebsites.net/api/NAL/256
 
 *Actualmente el proyecto únicamente acepta cifras de hasta 19 dígitos y acepta hasta 2 decimales.*
 
-# GET /api/NAL
+## GET /api/NAL
 
 Convierte un número a letras en español.
 
@@ -20,7 +20,7 @@ Convierte un número a letras en español.
 |**Path Parameters**|`double num`|
 |**Query Parameters**|NO|
 
-## Respuesta
+### Respuesta
 
 **GET** `https://nal.azurewebsites.net/api/NAL/256`
 
