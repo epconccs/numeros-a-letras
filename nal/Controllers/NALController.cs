@@ -19,5 +19,12 @@ namespace nal.Controllers
         {
             return NumerosALetras.ConvertirNumerosALetras(num.ToString());
         }
+
+        // GET api/NAL?num=256
+        [HttpGet]
+        public string GetQueryString(double num)
+        {
+            return NumerosALetras.ConvertirNumerosALetras(num.ToString());
+        }
     }
 }
