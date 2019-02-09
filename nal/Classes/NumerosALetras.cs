@@ -139,7 +139,7 @@ namespace nal.Classes
             else if (value < 2000000) resultado = "UN MILLÓN " + CovertirValor(value % 1000000);
             else if (value < 1000000000000)
             {
-                resultado = CovertirValor(Math.Truncate(value / 1000000)) + " MILLONES ";
+                resultado = CovertirValor(Math.Truncate(value / 1000000)) + " MILLONES";
                 if ((value - Math.Truncate(value / 1000000) * 1000000) > 0) resultado = resultado + " " + CovertirValor(value - Math.Truncate(value / 1000000) * 1000000);
             }
 
