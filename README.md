@@ -18,7 +18,7 @@ Convierte un número a letras en español.
 |**Método**|`GET`|
 |**Requiere Autenticación**|NO|
 |**Path Parameters**|`double num`|
-|**Query Parameters**|NO|
+|**Query Parameters**|`double num`|
 
 ### Respuesta
 
@@ -26,11 +26,18 @@ Convierte un número a letras en español.
 
 **Code** : `200 OK`
 
-**Body**: `DOSCIENTOS CINCUENTA Y SEIS`
+**Body**: `{"letras":"DOSCIENTOS CINCUENTA Y SEIS"}`
+
+---
+**GET** `https://nal.azurewebsites.net/api/NAL?num=256`
+
+**Code** : `200 OK`
+
+**Body**: `{"letras":"DOSCIENTOS CINCUENTA Y SEIS"}`
 
 ---
 **GET** `https://nal.azurewebsites.net/api/NAL/hola`
 
 **Code** : `200 OK`
 
-**Body**: `CERO`
+**Body**: `{"letras":"CERO"}`
