@@ -15,16 +15,16 @@ namespace nal.Controllers
 
         // GET api/Nal/256
         [HttpGet("{num}")]
-        public string Get(double num)
+        public ActionResult Get(double num)
         {
-            return NumerosALetras.ConvertirNumerosALetras(num.ToString());
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) });
         }
 
         // GET api/NAL?num=256
         [HttpGet]
-        public string GetQueryString(double num)
+        public ActionResult GetQuery(double num)
         {
-            return NumerosALetras.ConvertirNumerosALetras(num.ToString());
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) });
         }
     }
 }
