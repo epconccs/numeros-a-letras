@@ -11,7 +11,7 @@ namespace nal.Controllers
         [HttpGet("{num}")]
         public ActionResult Get(double num)
         {
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) + " :)"});
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString())});
         }
 
         // GET api/NAL?num=256
