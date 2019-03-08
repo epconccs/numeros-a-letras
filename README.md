@@ -1,4 +1,5 @@
-# NAL - Números a Letras
+# NAL - Números a Letras 
+[![Build Status](https://epconccs.visualstudio.com/NAL/_apis/build/status/NAL-Azure%20Web%20App%20for%20ASP.NET-CI?branchName=master)](https://epconccs.visualstudio.com/NAL/_build/latest?definitionId=1&branchName=master)
 
 Este es un proyecto **ASP.NET Core Web API** para convertir números a letras en español.
 
