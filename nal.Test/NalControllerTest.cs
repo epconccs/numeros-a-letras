@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using nal.Controllers;
+using Newtonsoft.Json;
 using Xunit;
 
 namespace nal.Test
@@ -17,9 +18,29 @@ namespace nal.Test
         [Fact]
         public void Get_RespuestaOk()
         {
-            var resultado = controller.Get(256);
+            var respuesta = controller.Get(256);
 
-            Assert.IsType<OkObjectResult>(resultado);
+            Assert.IsType<OkObjectResult>(respuesta);
+        }
+
+        [Fact]
+        public void Get_Numero_RespuestaLetra()
+        {
+            var numeroPrueba = new { letras = "DOSCIENTOS CINCUENTA Y SEIS" };
+
+            var respuesta = controller.Get(256) as OkObjectResult;
+            
+            Assert.Equal(JsonConvert.SerializeObject(numeroPrueba), JsonConvert.SerializeObject(respuesta.Value));
+        }
+
+        [Fact]
+        public void GetQuery_Numero_RespuestaLetra()
+        {
+            var numeroPrueba = new { letras = "DOSCIENTOS CINCUENTA Y SEIS" };
+
+            var respuesta = controller.GetQuery(256) as OkObjectResult;
+
+            Assert.Equal(JsonConvert.SerializeObject(numeroPrueba), JsonConvert.SerializeObject(respuesta.Value));
         }
 
     }
