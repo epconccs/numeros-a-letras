@@ -1,0 +1,1 @@
+coverlet nal.Test/bin/Debug/netcoreapp2.1/nal.Test.dll --target "dotnet" --targetargs "test nal.Test --no-build" --exclude "[xunit.*]*"

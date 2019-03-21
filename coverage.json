@@ -1,0 +1,1284 @@
+{
+  "nal.dll": {
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Program.cs": {
+      "nal.Program": {
+        "System.Void nal.Program::Main(System.String[])": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Hosting.IWebHostBuilder nal.Program::CreateWebHostBuilder(System.String[])": {
+          "Lines": {
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Startup.cs": {
+      "nal.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration nal.Startup::get_Configuration()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.Void nal.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void nal.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 29,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 9,
+              "EndOffset": 22,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void nal.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Controllers\\HomeController.cs": {
+      "nal.Controllers.HomeController": {
+        "Microsoft.AspNetCore.Mvc.IActionResult nal.Controllers.HomeController::Get()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.Void nal.Controllers.HomeController::.ctor(Microsoft.Extensions.Options.IOptions`1<nal.Config.AppSettings>)": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Controllers\\NalController.cs": {
+      "nal.Controllers.NalController": {
+        "Microsoft.AspNetCore.Mvc.ActionResult nal.Controllers.NalController::Get(System.Double)": {
+          "Lines": {
+            "13": 2,
+            "14": 2,
+            "15": 2
+          },
+          "Branches": []
+        },
+        "Microsoft.AspNetCore.Mvc.ActionResult nal.Controllers.NalController::GetQuery(System.Double)": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "22": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Config\\AppSettings.cs": {
+      "nal.Config.AppSettings": {
+        "System.String nal.Config.AppSettings::get_RepoUrl()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal\\Classes\\NumerosALetras.cs": {
+      "nal.Classes.NumerosALetras": {
+        "System.String nal.Classes.NumerosALetras::ConvertirNumerosALetras(System.String)": {
+          "Lines": {
+            "14": 3,
+            "16": 3,
+            "21": 3,
+            "23": 3,
+            "24": 0,
+            "25": 0,
+            "28": 3,
+            "29": 0,
+            "30": 0,
+            "33": 3,
+            "35": 3,
+            "36": 3,
+            "38": 3,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 3,
+            "46": 3,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "51": 3,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "56": 3,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "61": 3,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "67": 15,
+            "68": 6,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 3,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "83": 3
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 18,
+              "EndOffset": 33,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 28,
+              "Offset": 57,
+              "EndOffset": 59,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 28,
+              "Offset": 57,
+              "EndOffset": 72,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 38,
+              "Offset": 128,
+              "EndOffset": 130,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 128,
+              "EndOffset": 155,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 46,
+              "Offset": 194,
+              "EndOffset": 196,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 46,
+              "Offset": 194,
+              "EndOffset": 215,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 3
+            },
+            {
+              "Line": 51,
+              "Offset": 236,
+              "EndOffset": 238,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 51,
+              "Offset": 236,
+              "EndOffset": 257,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 3
+            },
+            {
+              "Line": 56,
+              "Offset": 278,
+              "EndOffset": 280,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 278,
+              "EndOffset": 299,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 3
+            },
+            {
+              "Line": 61,
+              "Offset": 320,
+              "EndOffset": 322,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 61,
+              "Offset": 320,
+              "EndOffset": 341,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 3
+            },
+            {
+              "Line": 67,
+              "Offset": 356,
+              "EndOffset": 358,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 1
+            },
+            {
+              "Line": 67,
+              "Offset": 356,
+              "EndOffset": 381,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 3
+            },
+            {
+              "Line": 68,
+              "Offset": 473,
+              "EndOffset": 393,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 410,
+              "EndOffset": 412,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 410,
+              "EndOffset": 430,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 435,
+              "EndOffset": 437,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 71,
+              "Offset": 435,
+              "EndOffset": 456,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 473,
+              "EndOffset": 475,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 3
+            }
+          ]
+        },
+        "System.String nal.Classes.NumerosALetras::CovertirValor(System.Double)": {
+          "Lines": {
+            "91": 18,
+            "92": 18,
+            "93": 18,
+            "94": 18,
+            "95": 18,
+            "96": 21,
+            "97": 15,
+            "98": 15,
+            "99": 0,
+            "100": 15,
+            "101": 18,
+            "102": 12,
+            "103": 12,
+            "104": 12,
+            "105": 12,
+            "106": 12,
+            "107": 12,
+            "108": 0,
+            "109": 12,
+            "110": 12,
+            "111": 12,
+            "112": 12,
+            "113": 12,
+            "114": 12,
+            "115": 12,
+            "116": 12,
+            "117": 15,
+            "118": 9,
+            "119": 9,
+            "120": 9,
+            "121": 9,
+            "122": 12,
+            "123": 6,
+            "124": 6,
+            "125": 9,
+            "126": 3,
+            "127": 3,
+            "128": 3,
+            "129": 6,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "146": 0,
+            "147": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 18,
+            "156": 18
+          },
+          "Branches": [
+            {
+              "Line": 94,
+              "Offset": 29,
+              "EndOffset": 31,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 29,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 18
+            },
+            {
+              "Line": 95,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 56,
+              "EndOffset": 69,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 18
+            },
+            {
+              "Line": 96,
+              "Offset": 83,
+              "EndOffset": 85,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 3
+            },
+            {
+              "Line": 96,
+              "Offset": 83,
+              "EndOffset": 96,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 15
+            },
+            {
+              "Line": 97,
+              "Offset": 112,
+              "EndOffset": 114,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 97,
+              "Offset": 112,
+              "EndOffset": 125,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 15
+            },
+            {
+              "Line": 98,
+              "Offset": 141,
+              "EndOffset": 143,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 141,
+              "EndOffset": 154,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 15
+            },
+            {
+              "Line": 100,
+              "Offset": 170,
+              "EndOffset": 172,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 100,
+              "Offset": 170,
+              "EndOffset": 183,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 15
+            },
+            {
+              "Line": 101,
+              "Offset": 199,
+              "EndOffset": 201,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 3
+            },
+            {
+              "Line": 101,
+              "Offset": 199,
+              "EndOffset": 212,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 12
+            },
+            {
+              "Line": 102,
+              "Offset": 228,
+              "EndOffset": 230,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 102,
+              "Offset": 228,
+              "EndOffset": 241,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 12
+            },
+            {
+              "Line": 103,
+              "Offset": 257,
+              "EndOffset": 259,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 103,
+              "Offset": 257,
+              "EndOffset": 270,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 12
+            },
+            {
+              "Line": 104,
+              "Offset": 286,
+              "EndOffset": 288,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 286,
+              "EndOffset": 299,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 12
+            },
+            {
+              "Line": 105,
+              "Offset": 315,
+              "EndOffset": 317,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 105,
+              "Offset": 315,
+              "EndOffset": 328,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 12
+            },
+            {
+              "Line": 106,
+              "Offset": 344,
+              "EndOffset": 346,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 106,
+              "Offset": 344,
+              "EndOffset": 357,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 12
+            },
+            {
+              "Line": 107,
+              "Offset": 373,
+              "EndOffset": 375,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 373,
+              "EndOffset": 386,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 12
+            },
+            {
+              "Line": 109,
+              "Offset": 402,
+              "EndOffset": 404,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 402,
+              "EndOffset": 415,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 12
+            },
+            {
+              "Line": 110,
+              "Offset": 431,
+              "EndOffset": 433,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 431,
+              "EndOffset": 444,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 12
+            },
+            {
+              "Line": 111,
+              "Offset": 460,
+              "EndOffset": 462,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 0
+            },
+            {
+              "Line": 111,
+              "Offset": 460,
+              "EndOffset": 473,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 12
+            },
+            {
+              "Line": 112,
+              "Offset": 489,
+              "EndOffset": 491,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 112,
+              "Offset": 489,
+              "EndOffset": 523,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 12
+            },
+            {
+              "Line": 113,
+              "Offset": 539,
+              "EndOffset": 541,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 113,
+              "Offset": 539,
+              "EndOffset": 552,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 12
+            },
+            {
+              "Line": 114,
+              "Offset": 568,
+              "EndOffset": 570,
+              "Path": 0,
+              "Ordinal": 36,
+              "Hits": 0
+            },
+            {
+              "Line": 114,
+              "Offset": 568,
+              "EndOffset": 602,
+              "Path": 1,
+              "Ordinal": 37,
+              "Hits": 12
+            },
+            {
+              "Line": 115,
+              "Offset": 618,
+              "EndOffset": 620,
+              "Path": 0,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 115,
+              "Offset": 618,
+              "EndOffset": 631,
+              "Path": 1,
+              "Ordinal": 39,
+              "Hits": 12
+            },
+            {
+              "Line": 116,
+              "Offset": 647,
+              "EndOffset": 649,
+              "Path": 0,
+              "Ordinal": 40,
+              "Hits": 0
+            },
+            {
+              "Line": 116,
+              "Offset": 647,
+              "EndOffset": 660,
+              "Path": 1,
+              "Ordinal": 41,
+              "Hits": 12
+            },
+            {
+              "Line": 117,
+              "Offset": 676,
+              "EndOffset": 678,
+              "Path": 0,
+              "Ordinal": 42,
+              "Hits": 3
+            },
+            {
+              "Line": 117,
+              "Offset": 676,
+              "EndOffset": 689,
+              "Path": 1,
+              "Ordinal": 43,
+              "Hits": 9
+            },
+            {
+              "Line": 118,
+              "Offset": 705,
+              "EndOffset": 707,
+              "Path": 0,
+              "Ordinal": 44,
+              "Hits": 0
+            },
+            {
+              "Line": 118,
+              "Offset": 705,
+              "EndOffset": 718,
+              "Path": 1,
+              "Ordinal": 45,
+              "Hits": 9
+            },
+            {
+              "Line": 119,
+              "Offset": 734,
+              "EndOffset": 736,
+              "Path": 0,
+              "Ordinal": 46,
+              "Hits": 0
+            },
+            {
+              "Line": 119,
+              "Offset": 734,
+              "EndOffset": 747,
+              "Path": 1,
+              "Ordinal": 47,
+              "Hits": 9
+            },
+            {
+              "Line": 120,
+              "Offset": 763,
+              "EndOffset": 765,
+              "Path": 0,
+              "Ordinal": 48,
+              "Hits": 0
+            },
+            {
+              "Line": 120,
+              "Offset": 763,
+              "EndOffset": 776,
+              "Path": 1,
+              "Ordinal": 49,
+              "Hits": 9
+            },
+            {
+              "Line": 121,
+              "Offset": 792,
+              "EndOffset": 794,
+              "Path": 0,
+              "Ordinal": 50,
+              "Hits": 0
+            },
+            {
+              "Line": 121,
+              "Offset": 792,
+              "EndOffset": 805,
+              "Path": 1,
+              "Ordinal": 51,
+              "Hits": 9
+            },
+            {
+              "Line": 122,
+              "Offset": 821,
+              "EndOffset": 823,
+              "Path": 0,
+              "Ordinal": 52,
+              "Hits": 3
+            },
+            {
+              "Line": 122,
+              "Offset": 821,
+              "EndOffset": 886,
+              "Path": 1,
+              "Ordinal": 53,
+              "Hits": 6
+            },
+            {
+              "Line": 123,
+              "Offset": 902,
+              "EndOffset": 904,
+              "Path": 0,
+              "Ordinal": 54,
+              "Hits": 0
+            },
+            {
+              "Line": 123,
+              "Offset": 902,
+              "EndOffset": 915,
+              "Path": 1,
+              "Ordinal": 55,
+              "Hits": 6
+            },
+            {
+              "Line": 124,
+              "Offset": 931,
+              "EndOffset": 933,
+              "Path": 0,
+              "Ordinal": 56,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 931,
+              "EndOffset": 965,
+              "Path": 1,
+              "Ordinal": 57,
+              "Hits": 6
+            },
+            {
+              "Line": 125,
+              "Offset": 975,
+              "EndOffset": 977,
+              "Path": 0,
+              "Ordinal": 58,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 987,
+              "EndOffset": 989,
+              "Path": 0,
+              "Ordinal": 60,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 999,
+              "EndOffset": 1001,
+              "Path": 0,
+              "Ordinal": 62,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 1011,
+              "EndOffset": 1013,
+              "Path": 0,
+              "Ordinal": 64,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 975,
+              "EndOffset": 1027,
+              "Path": 1,
+              "Ordinal": 59,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 987,
+              "EndOffset": 1027,
+              "Path": 1,
+              "Ordinal": 61,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 999,
+              "EndOffset": 1027,
+              "Path": 1,
+              "Ordinal": 63,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 1011,
+              "EndOffset": 1027,
+              "Path": 1,
+              "Ordinal": 65,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 1032,
+              "EndOffset": 1034,
+              "Path": 0,
+              "Ordinal": 66,
+              "Hits": 3
+            },
+            {
+              "Line": 125,
+              "Offset": 1032,
+              "EndOffset": 1071,
+              "Path": 1,
+              "Ordinal": 67,
+              "Hits": 3
+            },
+            {
+              "Line": 126,
+              "Offset": 1087,
+              "EndOffset": 1089,
+              "Path": 0,
+              "Ordinal": 68,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 1087,
+              "EndOffset": 1100,
+              "Path": 1,
+              "Ordinal": 69,
+              "Hits": 3
+            },
+            {
+              "Line": 127,
+              "Offset": 1116,
+              "EndOffset": 1118,
+              "Path": 0,
+              "Ordinal": 70,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 1116,
+              "EndOffset": 1129,
+              "Path": 1,
+              "Ordinal": 71,
+              "Hits": 3
+            },
+            {
+              "Line": 128,
+              "Offset": 1145,
+              "EndOffset": 1147,
+              "Path": 0,
+              "Ordinal": 72,
+              "Hits": 0
+            },
+            {
+              "Line": 128,
+              "Offset": 1145,
+              "EndOffset": 1158,
+              "Path": 1,
+              "Ordinal": 73,
+              "Hits": 3
+            },
+            {
+              "Line": 129,
+              "Offset": 1174,
+              "EndOffset": 1176,
+              "Path": 0,
+              "Ordinal": 74,
+              "Hits": 3
+            },
+            {
+              "Line": 129,
+              "Offset": 1174,
+              "EndOffset": 1239,
+              "Path": 1,
+              "Ordinal": 75,
+              "Hits": 0
+            },
+            {
+              "Line": 130,
+              "Offset": 1255,
+              "EndOffset": 1257,
+              "Path": 0,
+              "Ordinal": 76,
+              "Hits": 0
+            },
+            {
+              "Line": 130,
+              "Offset": 1255,
+              "EndOffset": 1268,
+              "Path": 1,
+              "Ordinal": 77,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 1284,
+              "EndOffset": 1286,
+              "Path": 0,
+              "Ordinal": 78,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 1284,
+              "EndOffset": 1318,
+              "Path": 1,
+              "Ordinal": 79,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 1334,
+              "EndOffset": 1336,
+              "Path": 0,
+              "Ordinal": 80,
+              "Hits": 0
+            },
+            {
+              "Line": 135,
+              "Offset": 1395,
+              "EndOffset": 1397,
+              "Path": 0,
+              "Ordinal": 82,
+              "Hits": 0
+            },
+            {
+              "Line": 135,
+              "Offset": 1395,
+              "EndOffset": 1425,
+              "Path": 1,
+              "Ordinal": 83,
+              "Hits": 0
+            },
+            {
+              "Line": 132,
+              "Offset": 1334,
+              "EndOffset": 1431,
+              "Path": 1,
+              "Ordinal": 81,
+              "Hits": 0
+            },
+            {
+              "Line": 138,
+              "Offset": 1447,
+              "EndOffset": 1449,
+              "Path": 0,
+              "Ordinal": 84,
+              "Hits": 0
+            },
+            {
+              "Line": 138,
+              "Offset": 1447,
+              "EndOffset": 1460,
+              "Path": 1,
+              "Ordinal": 85,
+              "Hits": 0
+            },
+            {
+              "Line": 139,
+              "Offset": 1476,
+              "EndOffset": 1478,
+              "Path": 0,
+              "Ordinal": 86,
+              "Hits": 0
+            },
+            {
+              "Line": 139,
+              "Offset": 1476,
+              "EndOffset": 1510,
+              "Path": 1,
+              "Ordinal": 87,
+              "Hits": 0
+            },
+            {
+              "Line": 140,
+              "Offset": 1526,
+              "EndOffset": 1531,
+              "Path": 0,
+              "Ordinal": 88,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 1607,
+              "EndOffset": 1609,
+              "Path": 0,
+              "Ordinal": 90,
+              "Hits": 0
+            },
+            {
+              "Line": 143,
+              "Offset": 1607,
+              "EndOffset": 1654,
+              "Path": 1,
+              "Ordinal": 91,
+              "Hits": 0
+            },
+            {
+              "Line": 140,
+              "Offset": 1526,
+              "EndOffset": 1660,
+              "Path": 1,
+              "Ordinal": 89,
+              "Hits": 0
+            },
+            {
+              "Line": 146,
+              "Offset": 1676,
+              "EndOffset": 1678,
+              "Path": 0,
+              "Ordinal": 92,
+              "Hits": 0
+            },
+            {
+              "Line": 146,
+              "Offset": 1676,
+              "EndOffset": 1689,
+              "Path": 1,
+              "Ordinal": 93,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 1705,
+              "EndOffset": 1707,
+              "Path": 0,
+              "Ordinal": 94,
+              "Hits": 0
+            },
+            {
+              "Line": 147,
+              "Offset": 1705,
+              "EndOffset": 1753,
+              "Path": 1,
+              "Ordinal": 95,
+              "Hits": 0
+            },
+            {
+              "Line": 152,
+              "Offset": 1829,
+              "EndOffset": 1831,
+              "Path": 0,
+              "Ordinal": 96,
+              "Hits": 0
+            },
+            {
+              "Line": 152,
+              "Offset": 1829,
+              "EndOffset": 1876,
+              "Path": 1,
+              "Ordinal": 97,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String nal.Classes.NumerosALetras::Reemplazar(System.String,System.String,System.String)": {
+          "Lines": {
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "nal.Test.dll": {
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal.Test\\obj\\Debug\\netcoreapp2.1\\nal.Test.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\7050426\\source\\repos\\nal\\nal.Test\\NalControllerTest.cs": {
+      "nal.Test.NalControllerTest": {
+        "System.Void nal.Test.NalControllerTest::Get_RespuestaOk()": {
+          "Lines": {
+            "20": 1,
+            "21": 1,
+            "23": 1,
+            "24": 1
+          },
+          "Branches": []
+        },
+        "System.Void nal.Test.NalControllerTest::Get_Numero_RespuestaLetra()": {
+          "Lines": {
+            "28": 1,
+            "29": 1,
+            "31": 1,
+            "33": 1,
+            "34": 1
+          },
+          "Branches": []
+        },
+        "System.Void nal.Test.NalControllerTest::GetQuery_Numero_RespuestaLetra()": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "41": 1,
+            "43": 1,
+            "44": 1
+          },
+          "Branches": []
+        },
+        "System.Void nal.Test.NalControllerTest::.ctor()": {
+          "Lines": {
+            "13": 3,
+            "14": 3,
+            "15": 3,
+            "16": 3
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
