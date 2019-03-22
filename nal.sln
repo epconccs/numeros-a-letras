@@ -1,7 +1,10 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nal", "nal\nal.csproj", "{32C5D837-850B-4403-BEB8-1874756B41DF}"
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nal", "nal\nal.csproj", "{32C5D837-850B-4403-BEB8-1874756B41DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nal.Test", "nal.Test\nal.Test.csproj", "{D7BEAA4C-FC85-4293-98EA-ABA3ADA3C45C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,5 +16,15 @@ Global
 		{32C5D837-850B-4403-BEB8-1874756B41DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32C5D837-850B-4403-BEB8-1874756B41DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32C5D837-850B-4403-BEB8-1874756B41DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7BEAA4C-FC85-4293-98EA-ABA3ADA3C45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7BEAA4C-FC85-4293-98EA-ABA3ADA3C45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7BEAA4C-FC85-4293-98EA-ABA3ADA3C45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7BEAA4C-FC85-4293-98EA-ABA3ADA3C45C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9A09EE1-BC8D-424A-A245-7F6EB93C60FE}
 	EndGlobalSection
 EndGlobal
