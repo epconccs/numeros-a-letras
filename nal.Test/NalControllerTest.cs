@@ -34,6 +34,14 @@ namespace nal.Test
         }
 
         [Fact]
+        public void GetQuery_RespuestaOk()
+        {
+            var respuesta = controller.GetQuery(256);
+
+            Assert.IsType<OkObjectResult>(respuesta);
+        }
+
+        [Fact]
         public void GetQuery_Numero_RespuestaLetra()
         {
             var numeroPrueba = new { letras = "DOSCIENTOS CINCUENTA Y SEIS" };
