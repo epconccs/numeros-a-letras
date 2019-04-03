@@ -104,8 +104,7 @@ namespace nal.Classes
             else if (value == 9) resultado = "NUEVE";
             else if (value == 10) resultado = "DIEZ";
             else if (value == 11) resultado = "ONCE";
-            else if (value == 12)
-                resultado = "DOCE";
+            else if (value == 12) resultado = "DOCE";
             else if (value == 13) resultado = "TRECE";
             else if (value == 14) resultado = "CATORCE";
             else if (value == 15) resultado = "QUINCE";
