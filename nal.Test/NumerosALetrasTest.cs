@@ -33,7 +33,10 @@ namespace nal.Test
         [Fact]
         public void ConvertirNumerosALetras_Nuemero_RetornaLetra()
         {
-            var respuesta = NumerosALetras.ConvertirNumerosALetras("1");
+            var respuesta = NumerosALetras.ConvertirNumerosALetras("0");
+            Assert.Equal("CERO", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("1");
             Assert.Equal("UNO", respuesta);
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("2");
@@ -65,6 +68,9 @@ namespace nal.Test
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("1256000");
             Assert.Equal("UN MILLÓN DOSCIENTOS CINCUENTA Y SEIS MIL", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("1000000256000");
+            Assert.Equal("UN BILLÓN DOSCIENTOS CINCUENTA Y SEIS MIL", respuesta);
         }
 
         [Fact]
