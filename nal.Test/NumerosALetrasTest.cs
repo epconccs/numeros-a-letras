@@ -39,6 +39,9 @@ namespace nal.Test
             respuesta = NumerosALetras.ConvertirNumerosALetras("1");
             Assert.Equal("UNO", respuesta);
 
+            respuesta = NumerosALetras.ConvertirNumerosALetras("1.16");
+            Assert.Equal("UNO CON 16/100", respuesta);
+
             respuesta = NumerosALetras.ConvertirNumerosALetras("2");
             Assert.Equal("DOS", respuesta);
 
