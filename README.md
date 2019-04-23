@@ -6,40 +6,8 @@ Este es un proyecto **ASP.NET Core Web API** para convertir números a letras en
 
 El API se encuentra publicada en el siguiente enlace -> https://nal.azurewebsites.net/
 
-Prueba -> https://nal.azurewebsites.net/api/NAL/256
+Documentación de API -> https://nal.azurewebsites.net/swagger/
+
+Prueba -> https://nal.azurewebsites.net/api/NAL/256/
 
 *Actualmente el proyecto únicamente acepta cifras de hasta 19 dígitos y acepta hasta 2 decimales.*
-
-## GET /api/NAL
-
-Convierte un número a letras en español.
-
-|Detalles||
-|---|---|
-|**URL**|`/api/NAL`|
-|**Método**|`GET`|
-|**Requiere Autenticación**|NO|
-|**Path Parameters**|`double num`|
-|**Query Parameters**|`double num`|
-
-### Respuesta
-
-**GET** `https://nal.azurewebsites.net/api/NAL/256`
-
-**Code** : `200 OK`
-
-**Body**: `{"letras":"DOSCIENTOS CINCUENTA Y SEIS"}`
-
----
-**GET** `https://nal.azurewebsites.net/api/NAL?num=256`
-
-**Code** : `200 OK`
-
-**Body**: `{"letras":"DOSCIENTOS CINCUENTA Y SEIS"}`
-
----
-**GET** `https://nal.azurewebsites.net/api/NAL/hola`
-
-**Code** : `200 OK`
-
-**Body**: `{"letras":"CERO"}`
