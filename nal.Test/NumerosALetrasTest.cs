@@ -54,6 +54,9 @@ namespace nal.Test
             respuesta = NumerosALetras.ConvertirNumerosALetras("16");
             Assert.Equal("DIECISÉIS", respuesta);
 
+            respuesta = NumerosALetras.ConvertirNumerosALetras("22");
+            Assert.Equal("VEINTIDÓS", respuesta);
+
             respuesta = NumerosALetras.ConvertirNumerosALetras("32");
             Assert.Equal("TREINTA Y DOS", respuesta);
 
