@@ -4,6 +4,7 @@ using nal.Config;
 
 namespace nal.Controllers
 {
+    [ApiExplorerSettings(IgnoreApi = true)]
     [Route("/")]
     public class HomeController : Controller
     {
