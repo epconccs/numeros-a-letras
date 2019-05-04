@@ -8,6 +8,10 @@ El API se encuentra publicada en el siguiente enlace -> https://nal.azurewebsite
 
 Documentación de API -> https://nal.azurewebsites.net/swagger/
 
+El API está publicada en el marketplace de **RapidAPI** en el siguiente enlace -> https://rapidapi.com/epconmx/api/numeros-a-letras1
+
+
+
 Prueba -> https://nal.azurewebsites.net/api/NAL/256/
 
 *Actualmente el proyecto únicamente acepta cifras de hasta 19 dígitos y acepta hasta 2 decimales.*
