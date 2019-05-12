@@ -9,16 +9,16 @@ namespace nal.Controllers
     {
         // GET api/Nal/256
         [HttpGet("{num}")]
-        public ActionResult Get(double num)
+        public ActionResult Get(string num)
         {
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString())});
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num) });
         }
 
         // GET api/NAL?num=256
         [HttpGet]
-        public ActionResult GetQuery(double num)
+        public ActionResult GetQuery(string num)
         {
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) });
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num) });
         }
     }
 }
