@@ -1,2 +1,2 @@
 dotnet test nal.Test/nal.Test.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:Exclude="[xunit.*]*" /p:CoverletOutput=../lcov.info
-%USERPROFILE%\.nuget\packages\codecov\1.1.0\tools\codecov.exe -f "lcov.info" -t %1
+%USERPROFILE%\.nuget\packages\codecov\1.5.0\tools\codecov.exe -f "lcov.info" -t %1
