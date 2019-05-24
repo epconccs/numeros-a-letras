@@ -54,8 +54,17 @@ namespace nal.Test
             respuesta = NumerosALetras.ConvertirNumerosALetras("16");
             Assert.Equal("DIECISÉIS", respuesta);
 
+            respuesta = NumerosALetras.ConvertirNumerosALetras("21");
+            Assert.Equal("VEINTIUNO", respuesta);
+
             respuesta = NumerosALetras.ConvertirNumerosALetras("22");
             Assert.Equal("VEINTIDÓS", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("23");
+            Assert.Equal("VEINTITRÉS", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("26");
+            Assert.Equal("VEINTISÉIS", respuesta);
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("32");
             Assert.Equal("TREINTA Y DOS", respuesta);
@@ -68,6 +77,9 @@ namespace nal.Test
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("256");
             Assert.Equal("DOSCIENTOS CINCUENTA Y SEIS", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("121000");
+            Assert.Equal("CIENTO VEINTIÚN MIL", respuesta);
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("1000000");
             Assert.Equal("UN MILLÓN", respuesta);
