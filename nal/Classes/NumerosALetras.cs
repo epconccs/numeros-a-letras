@@ -17,6 +17,7 @@ namespace nal.Classes
             Int64 entero;
             int decimales;
             double nro;
+            bool negativo = false;
             try
             {
                 // Validar vacíos.
@@ -31,6 +32,14 @@ namespace nal.Classes
                 }
                 // Tratar de convertir cadena a número.
                 nro = Double.Parse(numero);
+
+                // Validar negativos
+                if (nro < 0)
+                {
+                    nro = nro * -1;
+                    negativo = true;
+                }
+
                 // Obtener la parte entera y decimal.
                 entero = Convert.ToInt64(Math.Truncate(nro));
                 decimales = Convert.ToInt32(Math.Round((nro - entero) * 100, 2));
@@ -73,6 +82,9 @@ namespace nal.Classes
                         res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
                     }
                 }
+
+                if (negativo)
+                    res = "MENOS " + res;
 
                 return res;
             }
