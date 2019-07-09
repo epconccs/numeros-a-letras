@@ -5,9 +5,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using nal.Config;
 using Swashbuckle.AspNetCore.Swagger;
+using System.Diagnostics.CodeAnalysis;
 
 namespace nal
 {
+    [ExcludeFromCodeCoverage]
     public class Startup
     {
         public Startup(IConfiguration configuration)
