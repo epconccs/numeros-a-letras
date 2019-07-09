@@ -13,7 +13,7 @@ namespace nal.Controllers
         {
             if (!ModelState.IsValid) return BadRequest("No es un número.");
 
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) });
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString("G17"))});
         }
 
         // GET api/NAL?num=256
@@ -22,7 +22,7 @@ namespace nal.Controllers
         {
             if (!ModelState.IsValid) return BadRequest("No es un número.");
 
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString()) });
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString("G17"))});
         }
     }
 }
