@@ -34,6 +34,16 @@ namespace nal.Test
         }
 
         [Fact]
+        public void Get_Numero_RespuestaFueraDeRango()
+        {
+            var fueraDeRango = new { letras = "Número fuera de rango." };
+
+            var respuesta = controller.Get(12345678901234567) as OkObjectResult;
+            
+            Assert.Equal(JsonConvert.SerializeObject(fueraDeRango), JsonConvert.SerializeObject(respuesta.Value));
+        }
+
+        [Fact]
         public void GetQuery_RespuestaOk()
         {
             var respuesta = controller.GetQuery(256);
