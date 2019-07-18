@@ -77,7 +77,7 @@ namespace nal.Classes
                 for (int i = 0; i < contador; i++)
                 {
                     var index = res.IndexOf("VEINTIUNO");
-                    if (index != -1 && index != res.Count() - 9)
+                    if (index != res.Count() - 9)
                     {
                         res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
                     }
