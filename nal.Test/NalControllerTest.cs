@@ -24,12 +24,22 @@ namespace nal.Test
         }
 
         [Fact]
+        public void Get_RespuestaBadRequest()
+        {
+            controller.ModelState.AddModelError("", "");
+
+            var respuesta = controller.Get(0);
+
+            Assert.IsType<BadRequestObjectResult>(respuesta);
+        }
+
+        [Fact]
         public void Get_Numero_RespuestaLetra()
         {
             var numeroPrueba = new { letras = "DOSCIENTOS CINCUENTA Y SEIS" };
 
             var respuesta = controller.Get(256) as OkObjectResult;
-            
+
             Assert.Equal(JsonConvert.SerializeObject(numeroPrueba), JsonConvert.SerializeObject(respuesta.Value));
         }
 
@@ -39,7 +49,7 @@ namespace nal.Test
             var fueraDeRango = new { letras = "Número fuera de rango." };
 
             var respuesta = controller.Get(12345678901234567) as OkObjectResult;
-            
+
             Assert.Equal(JsonConvert.SerializeObject(fueraDeRango), JsonConvert.SerializeObject(respuesta.Value));
         }
 
@@ -49,6 +59,16 @@ namespace nal.Test
             var respuesta = controller.GetQuery(256);
 
             Assert.IsType<OkObjectResult>(respuesta);
+        }
+
+        [Fact]
+        public void GetQuery_RespuestaBadRequest()
+        {
+            controller.ModelState.AddModelError("", "");
+
+            var respuesta = controller.GetQuery(0);
+
+            Assert.IsType<BadRequestObjectResult>(respuesta);
         }
 
         [Fact]

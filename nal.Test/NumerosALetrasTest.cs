@@ -141,6 +141,9 @@ namespace nal.Test
             respuesta = NumerosALetras.ConvertirNumerosALetras("1100");
             Assert.Equal("MIL CIEN", respuesta);
 
+            respuesta = NumerosALetras.ConvertirNumerosALetras("2256");
+            Assert.Equal("DOS MIL DOSCIENTOS CINCUENTA Y SEIS", respuesta);
+
             respuesta = NumerosALetras.ConvertirNumerosALetras("121000");
             Assert.Equal("CIENTO VEINTIÚN MIL", respuesta);
 
@@ -161,6 +164,9 @@ namespace nal.Test
 
             respuesta = NumerosALetras.ConvertirNumerosALetras("5000000000000");
             Assert.Equal("CINCO BILLONES", respuesta);
+
+            respuesta = NumerosALetras.ConvertirNumerosALetras("5000000256000");
+            Assert.Equal("CINCO BILLONES DOSCIENTOS CINCUENTA Y SEIS MIL", respuesta);
         }
 
         [Fact]
