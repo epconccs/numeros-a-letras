@@ -7,22 +7,13 @@ namespace nal.Controllers
     [Route("api/[controller]")]
     public class NalController : Controller
     {
-        // GET api/Nal/256
-        [HttpGet("{num}")]
+        // GET api/NAL?num=256
+        [HttpGet]
         public ActionResult Get(double num)
         {
             if (!ModelState.IsValid) return BadRequest("No es un número.");
 
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString("G17"))});
-        }
-
-        // GET api/NAL?num=256
-        [HttpGet]
-        public ActionResult GetQuery(double num)
-        {
-            if (!ModelState.IsValid) return BadRequest("No es un número.");
-
-            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString("G17"))});
+            return Ok(new { letras = NumerosALetras.ConvertirNumerosALetras(num.ToString("G17")) });
         }
     }
 }
