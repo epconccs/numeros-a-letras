@@ -17,72 +17,66 @@ namespace nal.Classes
             Int64 entero;
             int decimales;
             bool negativo = false;
-            try
+
+            // Validar longitud (Double 16 dígitos).
+            if (numero > 9999999999999999)
             {
-                // Validar longitud (Double 16 dígitos).
-                if (numero > 9999999999999999)
-                {
-                    return "Número fuera de rango.";
-                }
-                // Validar negativos
-                if (numero < 0)
-                {
-                    numero = numero * -1;
-                    negativo = true;
-                }
-
-                // Obtener la parte entera y decimal.
-                entero = Convert.ToInt64(Math.Truncate(numero));
-                decimales = Convert.ToInt32(Math.Round((numero - entero) * 100, 2));
-                // Convertir parte decimal.
-                if (decimales > 0)
-                {
-                    dec = " CON " + decimales.ToString() + "/100";
-                }
-                // Convertir parte entera y unirla con la parte decimal.
-                res = CovertirValor(Convert.ToDouble(entero)) + dec;
-
-                // Acentos.
-                if (res.IndexOf("DIECISEIS") != -1)
-                {
-                    res = res.Replace("DIECISEIS", "DIECISÉIS");
-                }
-                // Acentos.
-                if (res.IndexOf("VEINTIDOS") != -1)
-                {
-                    res = res.Replace("VEINTIDOS", "VEINTIDÓS");
-                }
-                // Acentos.
-                if (res.IndexOf("VEINTITRES") != -1)
-                {
-                    res = res.Replace("VEINTITRES", "VEINTITRÉS");
-                }
-                // Acentos.
-                if (res.IndexOf("VEINTISEIS") != -1)
-                {
-                    res = res.Replace("VEINTISEIS", "VEINTISÉIS");
-                }
-
-                // Excepción VEINTIÚN.
-                var contador = res.Split(' ').Count(t => t == "VEINTIUNO");
-                for (int i = 0; i < contador; i++)
-                {
-                    var index = res.IndexOf("VEINTIUNO");
-                    if (index != res.Count() - 9)
-                    {
-                        res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
-                    }
-                }
-
-                if (negativo)
-                    res = "MENOS " + res;
-
-                return res;
+                return "Número fuera de rango.";
             }
-            catch
+            // Validar negativos
+            if (numero < 0)
             {
-                return "No es un número.";
+                numero = numero * -1;
+                negativo = true;
             }
+
+            // Obtener la parte entera y decimal.
+            entero = Convert.ToInt64(Math.Truncate(numero));
+            decimales = Convert.ToInt32(Math.Round((numero - entero) * 100, 2));
+            // Convertir parte decimal.
+            if (decimales > 0)
+            {
+                dec = " CON " + decimales.ToString() + "/100";
+            }
+            // Convertir parte entera y unirla con la parte decimal.
+            res = CovertirValor(Convert.ToDouble(entero)) + dec;
+
+            // Acentos.
+            if (res.IndexOf("DIECISEIS") != -1)
+            {
+                res = res.Replace("DIECISEIS", "DIECISÉIS");
+            }
+            // Acentos.
+            if (res.IndexOf("VEINTIDOS") != -1)
+            {
+                res = res.Replace("VEINTIDOS", "VEINTIDÓS");
+            }
+            // Acentos.
+            if (res.IndexOf("VEINTITRES") != -1)
+            {
+                res = res.Replace("VEINTITRES", "VEINTITRÉS");
+            }
+            // Acentos.
+            if (res.IndexOf("VEINTISEIS") != -1)
+            {
+                res = res.Replace("VEINTISEIS", "VEINTISÉIS");
+            }
+
+            // Excepción VEINTIÚN.
+            var contador = res.Split(' ').Count(t => t == "VEINTIUNO");
+            for (int i = 0; i < contador; i++)
+            {
+                var index = res.IndexOf("VEINTIUNO");
+                if (index != res.Count() - 9)
+                {
+                    res = Reemplazar(res, "VEINTIUNO", "VEINTIÚN");
+                }
+            }
+
+            if (negativo)
+                res = "MENOS " + res;
+
+            return res;
         }
 
         /// <summary>
