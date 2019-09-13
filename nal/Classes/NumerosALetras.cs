@@ -10,39 +10,30 @@ namespace nal.Classes
         /// </summary>
         /// <param name="numero">Número a convertir.</param>
         /// <returns>Número en formato de texto.</returns>
-        public static string ConvertirNumerosALetras(string numero)
+        public static string ConvertirNumerosALetras(double numero)
         {
             // Variables
             string res, dec = "";
             Int64 entero;
             int decimales;
-            double nro;
             bool negativo = false;
             try
             {
-                // Validar vacíos.
-                if (string.IsNullOrEmpty(numero))
-                {
-                    return "";
-                }
-                // Validar longitud (Double 16).
-                if (numero.Split('.')[0].Length > 16)
+                // Validar longitud (Double 16 dígitos).
+                if (numero > 9999999999999999)
                 {
                     return "Número fuera de rango.";
                 }
-                // Tratar de convertir cadena a número.
-                nro = Double.Parse(numero);
-
                 // Validar negativos
-                if (nro < 0)
+                if (numero < 0)
                 {
-                    nro = nro * -1;
+                    numero = numero * -1;
                     negativo = true;
                 }
 
                 // Obtener la parte entera y decimal.
-                entero = Convert.ToInt64(Math.Truncate(nro));
-                decimales = Convert.ToInt32(Math.Round((nro - entero) * 100, 2));
+                entero = Convert.ToInt64(Math.Truncate(numero));
+                decimales = Convert.ToInt32(Math.Round((numero - entero) * 100, 2));
                 // Convertir parte decimal.
                 if (decimales > 0)
                 {
