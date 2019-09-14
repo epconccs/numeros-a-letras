@@ -12,6 +12,6 @@ El API está publicada en el marketplace de **RapidAPI** en el siguiente enlace 
 
 
 
-Prueba -> https://nal.azurewebsites.net/api/NAL/256/
+Prueba -> https://nal.azurewebsites.net/api/NAL?num=256
 
 *Actualmente el proyecto únicamente acepta cifras de hasta 16 dígitos y acepta hasta 2 decimales.*
