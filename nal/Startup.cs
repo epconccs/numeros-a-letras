@@ -5,6 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using nal.Config;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
 using System.Diagnostics.CodeAnalysis;
 
 namespace nal
@@ -29,7 +30,17 @@ namespace nal
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "Números a Letras API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { 
+                    Title = "Números a Letras API",
+                    Description = "Este es un proyecto ASP.NET Core Web API para convertir números a letras en español.",
+                    Version = "v1",
+                    Contact = new Contact
+                    {
+                        Name = "EPCON CCS",
+                        Email = string.Empty,
+                        Url = "https://epcon.com.mx/",
+                    }
+                });
             });
         }
         
