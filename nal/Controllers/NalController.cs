@@ -5,9 +5,13 @@ using nal.Classes;
 namespace nal.Controllers
 {
     [Route("api/[controller]")]
+    [ProducesResponseType(200)]
+    [ProducesResponseType(400)]
     public class NalController : Controller
-    {
-        // GET api/NAL?num=256
+    {        
+        /// <summary>
+        ///  Convierte un número de hasta 16 dígitos a letra.
+        /// </summary>
         [HttpGet]
         public ActionResult Get(double num)
         {

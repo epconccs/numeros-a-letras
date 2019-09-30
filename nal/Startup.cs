@@ -7,6 +7,8 @@ using nal.Config;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.Diagnostics.CodeAnalysis;
+using System.IO;
+using System.Reflection;
 
 namespace nal
 {
@@ -41,6 +43,11 @@ namespace nal
                         Url = "https://epcon.com.mx/",
                     }
                 });
+
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
         
