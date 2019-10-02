@@ -10,8 +10,9 @@ namespace nal.Controllers
     public class NalController : Controller
     {        
         /// <summary>
-        ///  Convierte un número de hasta 16 dígitos a letra.
+        ///  Convierte un número a letra.
         /// </summary>
+        /// <param name="num">Número de hasta 16 dígitos y 2 decimales.</param> 
         [HttpGet]
         public ActionResult Get(double num)
         {
